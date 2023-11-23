@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "fd091611-4b94-4f10-9d55-6be8ef349d66",
+		"name": "ParkingSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Parking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"reg\":\"AAA\",\r\n\"parkingSlot\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/api/v1/getParking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"api",
+						"v1",
+						"getParking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Allocate Parking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"reg\":\"AAA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/api/v1/allocate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"api",
+						"v1",
+						"allocate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Release Parking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"reg\":\"AAA\",\r\n\"parkingSlot\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/api/v1/release",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"api",
+						"v1",
+						"release"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
